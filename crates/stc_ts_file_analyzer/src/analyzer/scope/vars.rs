@@ -217,6 +217,7 @@ impl Analyzer<'_, '_> {
             }
 
             RPat::Array(arr) => {
+                print!("the value of use_iterator_for_array{}", opts.use_iterator_for_array);
                 if opts.use_iterator_for_array {
                     // Handle tuple
                     //
